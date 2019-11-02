@@ -33,7 +33,7 @@ Use CallRemoteEvent when calling from the server and CallEvent when calling from
 * duration - duration in seconds (only used for automatic notifications)<br/>
 * color - HEX color example: "#ff0000"<br/>
 * id - id/name of the progress bar used to access it <br/>
-* automatic - boolean, should the progress bar update automatically (go from 0 to 100 in the set duration of time)<br/>
+* automatic - boolean, should the progress bar update automatically (go from 0 to 100 in the set duration of time) (default = true)<br/>
 
 ![image](https://i.imgur.com/ShrrmYa.png)
 
