@@ -1,0 +1,20 @@
+{
+	"author": "Kuzkay",
+	"version": "1.0",
+	"server_scripts": [],
+	"client_scripts": [
+		"client.lua"
+	],
+	"files": [
+		"utils/jquery.js",
+		"utils/jquery-ui.js",
+		"utils/Yanone.ttf",
+
+		"sounds/notification.wav",
+
+		"gui/notify.html",
+		"gui/notify.css",
+		"gui/notify.js"
+
+	]
+}
