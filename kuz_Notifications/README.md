@@ -1,26 +1,31 @@
-#Kuz_Notifications
+# Kuz_Notifications
 Use CallRemoteEvent when calling from the server and CallEvent when calling from the client
 
 
 
-#Send basic notification:
+## Send basic notification:
 ```
 'KNotify:Send' (text, [color])
 ```
 text - text which will be shown
 color - hex color
 
-#Show notification at the bottom of the screen
+![image](https://imgur.com/KBmB0Xr)
+![image](https://imgur.com/YL0eUu7)
+
+## Show notification at the bottom of the screen
 ```
 'KNotify:SendPress' (text)
 ```
 text - text which will be shown
 
-#Force hide notification at the bottom of the screen
+![image](https://imgur.com/ZuIORua)
+
+## Force hide notification at the bottom of the screen
 ```
 'KNotify:HidePress' ()
 ```
-#Add progress bar
+## Add progress bar
 ```
 'KNotify:AddProgressBar' (text, duration, color, id, [automatic])
 ```
@@ -30,21 +35,23 @@ color - HEX color example: "#ff0000"
 id - id/name of the progress bar used to access it 
 automatic - boolean, should the progress bar update automatically (go from 0 to 100 in the set duration of time)
 
-#Set progress bar text
+![image](https://imgur.com/ShrrmYa)
+
+## Set progress bar text
 ```
 'KNotify:SetProgressBarText' (id, text)
 ```
 id - id/name of the progress bar you want to access
 text - new text you want to display on the progress bar
 
-#Set progress bar percentage
+## Set progress bar percentage
 ```
 'KNotify:SetProgressBar' (id, progress)
 ```
 id - id/name of the progress bar you want to access
 progress - integer or float value of the % you want to set progress bar to (0-100)
 
-#Force remove progress bar
+## Force remove progress bar
 ```
 'KNotify:RemoveProgressBar' (id)
 ```
