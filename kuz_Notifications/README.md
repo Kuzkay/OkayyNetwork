@@ -10,8 +10,8 @@ Use CallRemoteEvent when calling from the server and CallEvent when calling from
 text - text which will be shown
 color - hex color
 
-![image](https://imgur.com/KBmB0Xr)
-![image](https://imgur.com/YL0eUu7)
+![image](https://i.imgur.com/KBmB0Xr.png)
+![image](https://i.imgur.com/YL0eUu7.png)
 
 ## Show notification at the bottom of the screen
 ```
@@ -19,7 +19,7 @@ color - hex color
 ```
 text - text which will be shown
 
-![image](https://imgur.com/ZuIORua)
+![image](https://i.imgur.com/ZuIORua.png)
 
 ## Force hide notification at the bottom of the screen
 ```
@@ -35,7 +35,7 @@ color - HEX color example: "#ff0000"
 id - id/name of the progress bar used to access it 
 automatic - boolean, should the progress bar update automatically (go from 0 to 100 in the set duration of time)
 
-![image](https://imgur.com/ShrrmYa)
+![image](https://i.imgur.com/ShrrmYa.png)
 
 ## Set progress bar text
 ```
