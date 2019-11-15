@@ -45,11 +45,10 @@ Use CallRemoteEvent when from the server
 ```
 'KUI:Closed_' + your menu_id  (menu_id)
 ```
-* menu_id - id of the menu which was defined in KUI:Create<br/>
+* menu_id - id of the menu which was defined in KUI:Create
 
 
-
-#Example: 
+# Example: 
 
 ```lua
 function OpenJobCenter(player)
