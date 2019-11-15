@@ -1,7 +1,7 @@
 # Kuz_UI
 Use CallRemoteEvent when from the server
 
-
+***
 #Callable Events:
 
 ## Create new menu:
@@ -38,7 +38,7 @@ Use CallRemoteEvent when from the server
 
 * id - id of the menu you wish to close(destroy totally)<br/>
 
-
+***
 # Recieving events:
 
 ## On option click:
@@ -54,7 +54,7 @@ Use CallRemoteEvent when from the server
 ```
 * menu_id - id of the menu which was defined in KUI:Create
 
-
+***
 # Example: 
 
 ```lua
