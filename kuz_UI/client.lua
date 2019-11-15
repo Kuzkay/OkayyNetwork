@@ -67,7 +67,7 @@ AddRemoteEvent("KUI:Close", DestroyUI)
 
 function AddOption(id, title, description, button_text)
 	if ui ~= 0 then
-		Delay(500, InsertOption, id, title, description, button_text)
+		Delay(100, InsertOption, id, title, description, button_text)
 		
 	end
 end
@@ -77,7 +77,7 @@ function InsertOption(id, title, description, button_text)
 	if loaded then
 		ExecuteWebJS(ui, "InsertOption('"..id.."','"..title.."','"..description.."','"..button_text.."');")
 	else
-		Delay(500, InsertOption, id, title, description, button_text)
+		Delay(100, InsertOption, id, title, description, button_text)
 	end
 end
 
