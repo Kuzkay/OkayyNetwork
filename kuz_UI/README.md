@@ -39,7 +39,7 @@ Use CallRemoteEvent when from the server
 * id - id of the menu you wish to close(destroy totally)<br/>
 
 
-#Recieving events:
+# Recieving events:
 
 ## On option click:
 ```
