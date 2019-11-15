@@ -1,0 +1,18 @@
+{
+	"author": "Kuzkay",
+	"version": "1.0",
+	"server_scripts": [],
+	"client_scripts": [
+		"client.lua"
+	],
+	"files": [
+		"utils/jquery-ui.js",
+		"utils/jquery.js",
+		"utils/Yanone.ttf",
+		"utils/click.wav",
+		
+		"gui/ui.css",
+		"gui/ui.js",
+		"gui/ui.html"
+	]
+}
