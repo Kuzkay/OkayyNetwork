@@ -31,6 +31,13 @@ Use CallRemoteEvent when from the server
 * bool - true = show the menu, false = hide the menu<br/>
 
 
+## Close the menu
+```
+'KUI:Close' (id)
+```
+
+* id - id of the menu you wish to close(destroy totally)<br/>
+
 
 #Recieving events:
 
