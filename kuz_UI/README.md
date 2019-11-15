@@ -33,10 +33,9 @@ Use CallRemoteEvent from the server
 
 ## Close the menu
 ```
-'KUI:Close' (id)
+'KUI:Close'
 ```
 
-* id - id of the menu you wish to close(destroy totally)<br/>
 
 ***
 # Recieving events:
