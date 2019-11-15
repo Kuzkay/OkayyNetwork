@@ -1,5 +1,5 @@
 # Kuz_UI
-Use CallRemoteEvent when from the server
+Use CallRemoteEvent from the server
 
 ***
 #Callable Events:
