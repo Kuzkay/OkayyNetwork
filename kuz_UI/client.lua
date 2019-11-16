@@ -61,6 +61,10 @@ function DestroyUI()
 		currentID = nil
 		loaded = false
 		ui = 0
+
+		SetIgnoreLookInput(false)
+		ShowMouseCursor(false)
+		SetInputMode(INPUT_GAME)
 	end
 end
 AddRemoteEvent("KUI:Close", DestroyUI)
