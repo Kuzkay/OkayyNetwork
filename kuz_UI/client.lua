@@ -1,6 +1,7 @@
 local ui = 0
 local loaded = false
-local currentID = ''
+local currentID = nil
+local currentName = nil
 
 function CreateUI(id, name)
 
@@ -11,23 +12,25 @@ function CreateUI(id, name)
 		SetWebAnchors(ui, 0.0, 0.0, 1.0, 1.0)
 		SetWebVisibility(ui, WEB_HIDDEN)
 		currentID = id
-		Delay(1000, function()
-			CallRemoteEvent("KUI:MenuLoaded_" .. id)
-			loaded = true
-			AddPlayerChat("creating ui " .. name .. " = " .. id)
-			ExecuteWebJS(ui, "OnCreate('"..name.."','"..id.."');")
-		end)
+		currentName = name
 	else
 		DestroyUI()
 	end
 end
 AddRemoteEvent("KUI:Create", CreateUI)
 
+function OnReady()
+	AddPlayerChat('UI Loaded')
+	loaded = true
+	AddPlayerChat("creating ui " .. currentName .. " = " .. currentID)
+	ExecuteWebJS(ui, "OnCreate('"..currentName.."','"..currentID.."');")
+end
+AddEvent("KUI:Ready", OnReady)
+
 function ShowUI(id, bool)
 	if ui ~= 0 then
 		if currentID ~= '' and currentID ~= nil then
-			if loaded then
-				if bool then
+			if bool then
 					SetWebVisibility(ui, WEB_VISIBLE)
 					SetIgnoreLookInput(true)
 					ShowMouseCursor(true)
@@ -38,9 +41,6 @@ function ShowUI(id, bool)
 					ShowMouseCursor(false)
 					SetInputMode(INPUT_GAME)
 				end
-			else
-				Delay(500, ShowUI, id, bool)
-			end
 		end
 	end
 end
@@ -71,8 +71,7 @@ AddRemoteEvent("KUI:Close", DestroyUI)
 
 function AddOption(id, title, description, button_text)
 	if ui ~= 0 then
-		Delay(100, InsertOption, id, title, description, button_text)
-		
+		Delay(200, InsertOption, id, title, description, button_text)
 	end
 end
 AddRemoteEvent("KUI:AddOption", AddOption)
@@ -81,7 +80,7 @@ function InsertOption(id, title, description, button_text)
 	if loaded then
 		ExecuteWebJS(ui, "InsertOption('"..id.."','"..title.."','"..description.."','"..button_text.."');")
 	else
-		Delay(100, InsertOption, id, title, description, button_text)
+		Delay(200, InsertOption, id, title, description, button_text)
 	end
 end
 
