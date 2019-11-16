@@ -1,4 +1,7 @@
-@import url('http://asset/kuz_UI/utils/Yanone.ttf');
+@font-face {
+  font-family: Yanone Kaffeesatz;
+  src: url('http://asset/kuz_UI/utils/Yanone.ttf');
+}
 body{
   display: none;
 }
