@@ -5,6 +5,7 @@ function Clear(){
 function OnCreate(name, id) {
 	$("#ui").attr('ui_id', id);
 	$("#title").text(name);
+	$('body').css('display', 'block');
 }
 
 
@@ -25,6 +26,8 @@ function playClick(){
 	var audio = new Audio('http://asset/kuz_UI/utils/click.wav');
 	audio.play();
 }
+
+
 
 (function(obj)
 	{
