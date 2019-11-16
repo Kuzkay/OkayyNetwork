@@ -1,4 +1,7 @@
 @import url('http://asset/kuz_UI/utils/Yanone.ttf');
+body{
+  display: none;
+}
 html, body{
   margin:0 auto;
   overflow: hidden;
