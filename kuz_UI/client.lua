@@ -20,9 +20,7 @@ end
 AddRemoteEvent("KUI:Create", CreateUI)
 
 function OnReady()
-	AddPlayerChat('UI Loaded')
 	loaded = true
-	AddPlayerChat("creating ui " .. currentName .. " = " .. currentID)
 	ExecuteWebJS(ui, "OnCreate('"..currentName.."','"..currentID.."');")
 end
 AddEvent("KUI:Ready", OnReady)
@@ -78,7 +76,7 @@ AddRemoteEvent("KUI:AddOption", AddOption)
 
 function InsertOption(id, title, description, button_text)
 	if loaded then
-		ExecuteWebJS(ui, "InsertOption('"..id.."','"..title.."','"..description.."','"..button_text.."');")
+		ExecuteWebJS(ui, "InsertOption('"..tostring(id).."','"..title.."','"..description.."','"..button_text.."');")
 	else
 		Delay(200, InsertOption, id, title, description, button_text)
 	end
