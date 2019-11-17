@@ -10,14 +10,17 @@ function OnCreate(name, id) {
 
 
 function InsertOption(id, title, description, button_text){
-	$(".container").append('<div class="option"><div class="optionTitle"><h1>'+title+'</h1><label>'+description+'</label></div><div class="optionButton"><div onclick="OnOptionClick(this)" option="'+id+'" id="optionBtn" class="optionBtn"><h1>'+button_text+'</h1></div></div></div>');
+	var aID = "id_" + ($(".option").length);
+	$(".container").append('<div class="option"><div class="optionTitle"><h1>'+title+'</h1><div><label>'+description+'</label></div></div><div class="optionButton"><div onclick="OnOptionClick(this)" option="'+id+'" id="optionBtn" class="optionBtn '+aID+'"><h1>'+button_text+'</h1></div></div></div>');
+	
+	$("." + aID).data("option",id);
 }
 
 
 function OnOptionClick(e){
 	var id 		= $("#ui").attr('ui_id');
-	var option 	= $(e).attr('option');
-
+	var option  = $(e).data("option");
+	
 	CallEvent("KUI:OptionPressed", id, option);
 	playClick();
 }
