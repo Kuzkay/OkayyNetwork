@@ -160,7 +160,7 @@ CREATE TABLE IF NOT EXISTS `profiles` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=61 DEFAULT CHARSET=latin1;
 
--- Dumping data for table basic.profiles: ~1 rows (approximately)
+-- Dumping data for table basic.profiles: ~0 rows (approximately)
 /*!40000 ALTER TABLE `profiles` DISABLE KEYS */;
 /*!40000 ALTER TABLE `profiles` ENABLE KEYS */;
 
@@ -172,7 +172,7 @@ CREATE TABLE IF NOT EXISTS `server_info` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- Dumping data for table basic.server_info: ~0 rows (approximately)
+-- Dumping data for table basic.server_info: ~1 rows (approximately)
 /*!40000 ALTER TABLE `server_info` DISABLE KEYS */;
 INSERT INTO `server_info` (`id`, `data`, `value`) VALUES
 	(1, 'time', '12');
