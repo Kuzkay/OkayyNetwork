@@ -1,0 +1,316 @@
+@font-face {
+  font-family: Yanone Kaffeesatz;
+  src: url('http://asset/kuz_Essentials/utils/Yanone.ttf');
+}
+@font-face {
+  font-family: bebas-neue;
+  src: url('http://asset/kuz_Essentials/utils/Bebas.ttf');
+}
+html{
+	overflow: hidden;
+    user-select: none;
+}
+body {
+  transition-duration: 2s;
+  font-family: "Arial";
+  color: white;
+  margin: 0;
+  overflow: hidden;
+  
+}
+h1{
+  font-color: #fff;
+  font-size: 1.9vh;
+  margin: 0;
+  margin-left: 35%;
+  margin-top: 1vh;
+  clear: both;
+}
+.role h1{
+  margin-left: 15%;
+}
+h2{
+	font-color: #fff;
+	font-size: 1.7vh;
+	margin-left: 35%;
+	position: absolute;
+	z-index: 5;
+	margin: 0;
+	margin-left: 35%;
+	margin-top: 0.7vh;
+}
+.discord{
+  position: fixed;
+  right: 4vw;
+  top: 0px;
+  background-color: rgba(70,70,70,0.15);
+}
+.discord label{
+  color: white;
+  font-size: 1.5vh;
+}
+
+.dImage{
+	float: right;
+	margin-bottom: 0vh;
+	margin-top: -2.9vh;
+	margin-right: 1vh;
+	width: 2.5vh;
+	height: auto;
+	clear: both;
+}
+.level{
+	position: relative;
+	
+	height: 2.5vh;
+}
+.container{
+	position: fixed;
+	right: 0;
+	top: 0%;
+	height: 15%;
+	width: 10%;
+	display:block;
+	overflow: hidden;
+	background: -moz-linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.3) 100%); /* ff3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255,255,255,0)), color-stop(100%, rgba(0,0,0,0.55))); /* safari4+,chrome */
+	background: -webkit-linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.3) 100%); /* safari5.1+,chrome10+ */
+	background: -o-linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.3) 100%); /* opera 11.10+ */
+	background: -ms-linear-gradient(360deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.3) 100%); /* ie10+ */
+	background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.3) 100%); /* w3c */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFFFFF', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
+	padding-bottom: 0.5vh;
+	padding-top: 8%;
+}
+
+.block{
+	position: relative;
+    height: 3.2vh;
+    margin-bottom: 0.8vh;
+    margin-top: 0.8vh;
+    overflow: hidden;
+}
+.border{
+	border:1px solid rgba(255,255,255,0.7)!important;
+	height: 2vh;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-top: 0.5vh;
+	margin-bottom: 0.5vh;
+	border-radius: 0.65vh;
+	overflow: hidden;
+}
+.levelBar{
+	background-color: rgba(252, 107, 3, 0.6) !important;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	height: 100%;
+}
+
+
+.deathscreen{
+	position: fixed;
+	margin: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.85);
+}
+.deathscreen h1{
+	position: fixed;
+	font-size: 5vh;
+	margin: 0;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+
+
+
+
+
+.speedo{
+  overflow: visible !important;
+  opacity: 0.6;
+  background: url(http://asset/kuz_Essentials/profile/main_gui/img/speedo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 34vh;
+  height: 16vh;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 5%);
+
+  font-family: "Arial";
+  color: white;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.speed{
+  background-color: red;
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transform: translate(0.1vh, 0);
+}
+.speed::after{
+  content: '';
+  display: block;
+  background-color: red;
+  height: 7vh;
+  width: 0.3vh;
+  transform: translate(0.3vh, 0%);
+}
+
+
+.rpm{
+  transform: translate(0.1vh, 0);
+  background-color: red;
+  width: 1vh;
+  height: 1vh;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+}
+.rpm::after{
+  content: '';
+  display: block;
+  background-color: red;
+  height: 6.8vh;
+  width: 0.3vh;
+  transform: translate(0.3vh, 0%);
+}
+
+
+.scoreboard_main{
+	display: none;
+}
+.scoreboard_container{
+  display: inline-block;
+  background: url("http://asset/kuz_Essentials/profile/login_gui/image.png"), linear-gradient(to left, #000000, #f78d1b);
+  color: white;
+  border-radius: 0.7vh;
+  font-family: bebas-neue, sans-serif !important;
+  opacity: 0.85;
+  margin: 0vh;
+  padding: 0.5vh;
+  max-height: 80vh;
+}
+
+#playertable, .keybind_table{
+    font-family: bebas-neue, sans-serif !important;
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+    font-size: 1.8vh;
+}
+
+.scoreboard_container table{
+  max-height: 78vh;
+  overflow: scroll !important;
+}
+
+#playertable tr td, #playertable tr th, .keybind_table thead tr td, .keybind_table thead tr th, .keybind_table tbody tr td, .keybind_table tbody tr th {
+    border-top: 1px solid #dddddd;
+    text-align: left;
+    padding: 6px;
+}
+#playertable tr:nth-child(even), .keybind_table thead tr:nth-child(even), .keybind_table tbody tr:nth-child(even){
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+}
+.scoreboard{
+  position: fixed;
+  top: 5%;
+  margin-right: 35vw;
+  margin-left: 35vw;
+  bottom: 5%;
+  height: 90%;
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#playercount {
+  float: right;
+}
+.ping{
+  width: 1.5vh;
+  height: 1.5vh;
+  border-radius: 2vh;
+  background: #ff0000;
+}
+#servername{
+  font-size: 2vh;
+  margin-bottom: 0.4vh;
+}
+#playercount{
+  font-size: 2vh;
+  margin-bottom: 0.4vh;
+}
+
+.keybinds{
+  font-size: 1.8vh;
+  opacity: 0.85;
+  position: fixed;
+  float: right;
+  margin: 0;
+  top: 100%;
+  color: white;
+  height: auto;
+  transform: translate(0,-100%);
+  width: 20%;
+  background: rgba(50,50,50,0.3);
+}
+.keybinds table{
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.signature.gar{
+  position: relative;
+  font-size: 1.2vh;
+  left: 1.5%;
+  color: rgba(255,255,255,0.3);
+  cursor: move;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9fa19f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #474747;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}

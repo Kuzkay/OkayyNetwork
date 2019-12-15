@@ -1,0 +1,164 @@
+<html>
+<head>
+<script src="http://asset/kuz_Essentials/utils/jquery.js"></script>
+<link rel="stylesheet" href="http://asset/kuz_Essentials/profile/main_gui/main.css">
+<script src="http://asset/kuz_Essentials/profile/main_gui/main.js"></script>
+<link rel="stylesheet" href="http://asset/kuz_Essentials/atm/gui/atm.css">
+<script src="http://asset/kuz_Essentials/atm/gui/atm.js"></script>
+</head>
+
+<body id="body">
+	<div class="discord"><label>Join our Discord: discord.io/okayy</label></div>
+	<div class="container">
+		<div class="block">
+			<h1 id="money"></h1><img class="dImage" src="http://asset/kuz_Essentials/profile/main_gui/img/money.png">
+		</div>
+		<div class="block">
+			<h1 id="bank"></h1><img class="dImage" src="http://asset/kuz_Essentials/profile/main_gui/img/bank.png">
+		</div>
+		<div class="block role">
+			<h1 id="role"></h1>
+		</div>
+		<div class="block level">
+				<h2 id="level"></h2>
+			<div class="border">
+			  <div class="levelBar" id="levelBar" style="width:0%"></div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="atm" id="atm">
+		<div class="topper">
+		</div>
+		<div class="balance">
+			<div>
+			<span id="bank_balance"><b>BALANCE: </b><label></label></span>
+			</div>
+		</div>
+		<div class="balance cash">
+			<div>
+			<span id="cash_balance"><b>CASH: </b><label></label></span>
+			</div>
+		</div>
+		<div class="balance cash input">
+			<div>
+			<input type="number" name="amount" id="amount" class="amount">
+			</div>
+		</div>
+		<div class="buttons">
+			<div>
+			<button onclick="withdraw(this)" id="withdraw">WITHDRAW</button>
+			<button onclick="deposit(this)" id="deposit">DEPOSIT</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="deathscreen">
+		<h1>You are unconscious</h1>
+	</div>
+
+	<div class="speedo">
+		<div>
+			<div class="rpm">
+			</div>
+		</div>
+		<div>
+			<div class="speed">
+			</div>
+		</div>
+	</div>
+
+		
+
+
+
+
+
+
+
+
+	<div class="scoreboard_main">
+		<div class="keybinds">
+		  <table class="keybind_table">
+		    <thead>
+		        <tr style="color:white; background: rgba(60,60,60,0.6);">
+		            <th>Function</th>
+		            <th>Keybind</th>
+		        </tr>
+		    </thead>
+		    <tbody>
+		        <tr style="color:lightgray">
+		            <th>Interact</th>
+		            <th>E</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Pickup Item/Weapon</th>
+		            <th>E</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Toggle Inventory</th>
+		            <th>F2</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Toggle Phone</th>
+		            <th>F1 or Ctrl + P</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Open Trunk</th>
+		            <th>U</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Toggle Handsup</th>
+		            <th>X (+ CTRL to kneel)</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Drop Weapon</th>
+		            <th>CTRL + G</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Toggle vehicle lock</th>
+		            <th>CTRL + L</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Animations menu</th>
+		            <th>B (Double tap to repeat)</th>
+		        </tr>
+		        <tr style="color:lightgray">
+		            <th>Housing menu</th>
+		            <th>CTRL + H</th>
+		        </tr>
+		    </tbody>
+		    </table>
+		</div>
+
+
+
+		<div class="scoreboard">
+			<div class="scoreboard_container">
+				<span id="servername">Servername</span>
+				<span id="playercount">0 / 10</span>
+
+				<table id="playertable">
+					  <tr>
+						<th>ID</th>
+					    <th>Player</th>
+					    <th>Job</th>
+					    <th width="10%">Ping</th>
+					  </tr>
+					  <tr class="player">
+					    <td>-</td>
+					    <td>-</td>
+					    <td>-</td>
+					    <td>-</td>
+					  </tr>
+				</table>
+			</div>
+		</div>
+	</div>
+
+
+	
+</body>
+</html>

@@ -1,0 +1,177 @@
+@font-face {
+  font-family: Yanone Kaffeesatz;
+  src: url('http://asset/kuz_Essentials/utils/Yanone.ttf');
+}
+@font-face {
+  font-family: bebas-neue;
+  src: url('http://asset/kuz_Essentials/utils/Bebas.ttf');
+}
+html, body{
+  margin:0 auto;
+  overflow: hidden;
+  font-family: bebas-neue, sans-serif !important;
+  font-weight: 500;
+}
+.atm {
+  user-select: all;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-family: bebas-neue, sans-serif !important;
+  border-radius: 1vh;
+  color: white;
+  margin: 0;
+  overflow: hidden;
+  height: 55vh;
+  width: 50vh;
+  z-index: 0;
+  box-shadow: 5px 5px 9px -5px rgba(0,0,0,0.6);
+
+  background: linear-gradient(135deg, #f0f0f0 0%,#8a8a8a 100%); 
+  user-select: none; 
+}
+.topper{
+  position: relative;
+  background: #520707;
+  width: 100%;
+  height: 20%;
+  margin-top: 0;
+  background-image: url("img/paydaybanking.png");
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-position: center; 
+  background-position: right top;
+  border-bottom: 1px solid rgba(70,70,70,0.35);
+}
+.balance{
+  position: relative;
+  width: 100%;
+  height: 35%;
+  margin-top: 0;
+  display: inline;
+  color: rgb(50,50,50);
+  text-align: left;
+  font-size: 3.3vh;
+}
+.balance div{
+  position: relative;
+  margin-top: 4vh;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  background: rgba(100,100,100,0.1);
+  border-radius: 0.6vh;
+  border: 1px solid rgba(0,0,0,0.17);
+  -webkit-box-shadow: inset 0 0 12px rgba(0,0,0,0.15);
+  width: 85%;
+  height: 10%;
+  display: table;
+}
+.cash div{
+  margin-top: 2.5vh;
+}
+.balance div span{
+  transform: translate(5%,0);
+  display: table-cell; vertical-align: middle;
+}
+.input div{
+  transition-duration: 0.15s;
+  background: rgba(100,100,100,0.1);
+}
+.input div:hover{
+  transition-duration: 0.3s;
+  background: rgba(0,0,0,0.15);
+}
+.amount{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  color: rgb(50,50,50);
+  font-size: 3vh;
+  font-weight: 600;
+  font-family: bebas-neue, sans-serif !important;
+  margin-left: 5%;
+  margin-right: 5%;
+  background: transparent;
+  border: none;
+  display: table-cell; vertical-align: middle;
+}
+.amount:focus{
+  outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.buttons{
+  position: absolute;
+  width: 100%;
+  height: 12vh;
+  margin-top: 0;
+  display: inline;
+  color: rgb(50,50,50);
+  text-align: left;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+.buttons button{
+  margin: 1vh;
+  margin-top: 3vh;
+  height: 6.5vh;
+  width: 20vh;
+  transition-duration: 0.2s;
+  background: rgba(100,100,100,0.3);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 0.6vh;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+  color: rgb(50,50,50);
+  font-size: 2.5vh;
+  font-weight: 600;
+  font-family: bebas-neue, sans-serif !important;
+  cursor: pointer;
+}
+.buttons button:hover{
+  font-size: 2.8vh;
+  transition-duration: 0.3s;
+  background: rgba(60,60,60,0.3);
+}
+.buttons button:focus{
+  outline: none;
+}
+
+.title{
+  position: relative;
+  font-color: #fff;
+  font-size: 3.5vh;
+  text-align: center;
+
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9fa19f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #474747;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}

@@ -1,0 +1,94 @@
+{
+	"author": "Kuzkay",
+	"version": "1.0",
+	"server_scripts": [
+		"config.lua",
+		"trunks.lua",
+		"utils/json.lua",
+		"atm/config.lua",
+		"shops/config.lua",
+		"../database.lua",
+		"profile/main.lua",
+		"profile/functions.lua",
+		"inventory/server.lua",
+		
+		"inventory/functions.lua",
+		"inventory/storages_functions.lua",
+		
+		"scoreboard/scoreboard_s.lua",
+		"atm/server.lua",
+		"shops/server.lua",
+		"wtsync/server.lua",
+		"speedo/server.lua",
+		"functions_s.lua",
+		"doors.lua"
+	],
+	"client_scripts": [
+		"config.lua",
+		"atm/config.lua",
+		"shops/config.lua",
+		"profile/client.lua",
+		"inventory/client.lua",
+
+		"scoreboard/scoreboard_c.lua",
+		"atm/client.lua",
+		"shops/client.lua",
+		"wtsync/client.lua",
+		"speedo/client.lua",
+		"functions_c.lua"
+	],
+	"files": [
+		"inventory/icons/exit.png",
+		"inventory/icons/unknown.png",
+		"inventory/icons/empty.png",
+		"inventory/icons/cannabis.png",
+		"inventory/icons/coca.png",
+		"inventory/icons/meth.png",
+		"inventory/icons/cocaine.png",
+		"inventory/icons/weed.png",
+		"inventory/icons/bandage.png",
+		"inventory/icons/garbage.png",
+		"inventory/icons/asphalt.png",
+		"inventory/icons/acetone.png",
+		"inventory/icons/gas.png",
+		"inventory/icons/poppy.png",
+		"inventory/icons/heroin.png",
+		"inventory/icons/medkit.png",
+		"inventory/icons/firework.png",
+		"inventory/icons/bigfirework.png",
+		"inventory/icons/ammo.png",
+		"inventory/icons/calcium.png",
+		"inventory/icons/repairkit.png",
+		"inventory/icons/ziptie.png",
+		"inventory/icons/cuffs.png",
+
+		"utils/jquery.js",
+		"utils/jquery-ui.js",
+		"utils/Yanone.ttf",
+		"utils/Bebas.ttf",
+
+		"sounds/drop.wav",
+		"sounds/click.wav",
+
+		"profile/login_gui/roleSelect.html",
+		"profile/login_gui/roleSelect.js",
+		"profile/login_gui/image.png",
+		"profile/login_gui/loading.gif",
+
+		
+		"profile/main_gui/main.html",
+		"profile/main_gui/main.css",
+		"profile/main_gui/main.js",
+		"profile/main_gui/img/money.png",
+		"profile/main_gui/img/bank.png",
+		"profile/main_gui/img/speedo.png",
+
+
+		"inventory/gui/inventory.html",
+
+			
+		"atm/gui/atm.css",
+		"atm/gui/atm.js",
+		"atm/gui/img/paydaybanking.png"
+	]
+}

@@ -1,0 +1,65 @@
+function ToggleAtm(bool){
+	if(bool){
+		$(".atm").show();
+	}else{
+		$(".atm").hide();
+	}
+	
+	
+}
+
+function withdraw(e){
+	playClick();
+	var amount = $("#amount").val();
+	CallEvent("Kuzkay:OnWithdraw", amount);
+}
+
+function deposit(e){
+	playClick();
+	var amount = $("#amount").val();
+	CallEvent("Kuzkay:OnDeposit", amount);
+}
+
+function SetAmount(amount){
+	$("#amount").val(amount);
+}
+
+function SetFields(bank, cash){
+
+	var bank = parseInt(bank).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    var newBank = bank.substring(0, bank.length - 3);
+
+    var cash = parseInt(cash).toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+    var newCash = cash.substring(0, cash.length - 3);
+
+	$("#bank_balance").html("<b>BALANCE: </b><label>$"+newBank+"</label>");
+	$("#cash_balance").html("<b>CASH: </b><label>$"+newCash+"</label>");
+}
+
+function playClick(){
+	var audio = new Audio('http://asset/kuz_Essentials/sounds/click.wav');
+	audio.play();
+}
+
+(function(obj)
+	{
+		ue.game = {};
+		ue.game.callevent = function(name, ...args)
+		{
+			if (typeof name != "string") {
+				return;
+			}
+
+			if (args.length == 0) {
+				obj.callevent(name, "")
+			}
+			else {
+				let params = []
+				for (let i = 0; i < args.length; i++) {
+					params[i] = args[i];
+				}
+				obj.callevent(name, JSON.stringify(params));
+			}
+		};
+	})(ue.game);
+CallEvent = ue.game.callevent;
