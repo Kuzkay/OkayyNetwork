@@ -1,0 +1,9 @@
+{
+	"author": "Kuzkay",
+	"version": "1.0",
+	"server_scripts": [
+		"ac_s.lua"
+	],
+	"client_scripts": [],
+	"files": []
+}

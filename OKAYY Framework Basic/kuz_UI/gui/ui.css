@@ -1,0 +1,158 @@
+@font-face {
+  font-family: Yanone Kaffeesatz;
+  src: url('http://asset/kuz_UI/utils/Yanone.ttf');
+}
+body{
+  display: none;
+}
+html, body{
+  margin:0 auto;
+  overflow: hidden;
+  font-family: 'Yanone Kaffeesatz', sans-serif !important;
+}
+.ui {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  font-family: 'Yanone Kaffeesatz', sans-serif !important;
+  border-radius: 0.5vh;
+  color: white;
+  margin: 0;
+  overflow: hidden;
+  display: block;
+  height: 59vh;
+  width: 58vh;
+  z-index: 0;
+  box-shadow: 5px 5px 9px -5px rgba(0,0,0,0.6);
+
+
+  background: linear-gradient(135deg, rgba(50,50,50,0.75) 0%,rgba(10,10,10,0.8) 100%); 
+  user-select: none; 
+}
+
+
+.title{
+  font-color: #fff;
+  font-size: 3.5vh;
+  text-align: center;
+  margin: 0.5vh;
+  margin-top: 1.5vh;
+}
+
+.container{
+  display: block;
+  justify-content: flex-start;
+  align-content: flex-start;
+  position: relative;
+  height: 49vh;
+  width: 55vh;
+  overflow: auto;
+  margin-bottom: 0.8vh;
+  margin-top: 1vh;
+  margin-left: 1.45vh;
+  margin-right: 1.45vh;
+  float: left;
+  border-radius: 1vh;
+  z-index: 1;
+  cursor: default;
+  border-radius: 0.5vh;
+
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+
+  background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(5,1,1,0.22) 25%, rgba(10,1,1,0.3) 50%, rgba(5,1,1,0.22) 75%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(5,1,1,0.22) 25%,rgba(10,1,1,0.3) 50%,rgba(5,1,1,0.22) 75%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(5,1,1,0.22) 25%,rgba(10,1,1,0.3) 50%,rgba(5,1,1,0.22) 75%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+
+.option{
+  display: flex;
+  height: 8vh;
+  width: 99%;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  border-radius: 3px;
+  background: rgb(38,38,38);
+  background: linear-gradient(90deg, rgba(42,42,42,1) 0%, rgba(110,110,110,1) 100%);
+}
+.optionTitle{
+  width: 65%;
+  height: 100%;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  display: block;
+}
+.optionTitle h1{
+  font-size: 2.7vh;
+  margin-left: 4%;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  margin-right: 5%;
+}
+.optionTitle div{
+  margin-left: 5%;
+  margin-right: 2%;
+}
+.optionTitle div label{
+  font-size: 1.5vh;
+}
+.optionButton{
+  height: 100%;
+  width: 35%;
+}
+
+.optionBtn{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: table; 
+  justify-content: center;
+  transition-duration: 0.1s;
+  background-color: rgba(155,155,155,0.2);
+}
+.optionBtn:hover{
+  background-color: rgba(190,190,190,0.2);
+  background-clip:border-box;
+  transition-duration: 0.2s;
+}
+.optionBtn h1{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 3vh;
+  transform: translate(0,0%);
+}
+
+
+.signature{
+  position: relative;
+  font-size: 1.2vh;
+  left: 1.5%;
+  color: rgba(255,255,255,0.3);
+  cursor: move;
+}
+
+/*SCROLLBAR*/
+/* width */
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #9fa19f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #474747;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #242424;
+}

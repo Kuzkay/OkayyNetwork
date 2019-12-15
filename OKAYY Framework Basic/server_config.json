@@ -1,0 +1,33 @@
+{
+	"servername": "OKAYY Framework",
+	"servername_short": "OKAYY Framework",
+	"gamemode": "[Basic]",
+	"website_url": "https://Okayy.network/",
+	"ipaddress": "0.0.0.0",
+	"port": 7777,
+	"maxplayers": 200,
+	"password": "",
+	"timeout": 20000,
+	"iplimit": 3,
+	"masterlist": false,
+	"plugins": [
+		"mariadb"
+	],
+	"packages": [
+		"OAC",
+		"kuz_Essentials",
+		"default",
+		"kuz_UI",
+		"kuz_ActionZones",
+		"kuz_Undermap",
+		"kuz_Extra",
+		"kuz_Notifications",
+		"kuz_Usable"
+	],
+	"stream_distance": 240000.0,
+	"stream_update_rate": 0.05,
+	"voice": true,
+	"voice_sample_rate": 16000,
+	"voice_distance": 5000.0,
+	"voice_spatialization": true
+}
