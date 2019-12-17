@@ -13,6 +13,9 @@ This version contains:
 * Time + Weather sync
 
 
+**If you want to purchase a version with more features contact me on Discord Kuzkay#9999**
+
+
 # Basics
 
 ## Import OKAYY Framework to your own package
