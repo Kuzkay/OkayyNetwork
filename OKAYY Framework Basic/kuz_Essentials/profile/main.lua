@@ -72,6 +72,9 @@ end
 
 AddEvent("OnPlayerJoin", function (player)
 	loaded[player] = false
+	local fullName = GetPlayerName(player)
+    	local name = fullName:gsub( "%W", "" )
+    	SetPlayerName(player, name)
 end)
 
 function SendPaychecks()
