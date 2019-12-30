@@ -213,11 +213,12 @@ function CreateProfile(player)
 
 	
 
-
+	local fullName = GetPlayerName(player)
+   	local name = fullName:gsub( "%W", "" )
 	print("creating")
 	local query = mariadb_prepare(sql, "INSERT INTO `profiles` (`steamid`, `name`, `money`, `bank`, `level`, `experience`, `position`, `inventory`, `role`, `job`, `donator`) VALUES ('?', '?', '?', '?', '?', '?', '?', '?', '?', '?', '?');",
 		tostring(GetPlayerSteamId(player)),
-		GetPlayerName(player),
+		fullName,
 		Config.StartMoney,
 		Config.StartBank,
 		1,
